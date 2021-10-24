@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-const TextStyle labelTextStyle = TextStyle(  fontSize: 18.0,  color: Color(0xFF8D8E98),);
+import 'package:bmi_calculator/constants.dart';
+// const TextStyle labelTextStyle = TextStyle(  fontSize: 18.0,  color: Color(0xFF8D8E98),);
 
 class IconContent extends StatelessWidget {
   IconContent({@required this.icon, this.label,});
@@ -11,6 +11,7 @@ class IconContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // print('디자인 바꿈');
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -23,7 +24,7 @@ class IconContent extends StatelessWidget {
         ),
         Text(
           label,
-          style: labelTextStyle,
+          style: kLabelTextStyle,
         )
       ],
     );
